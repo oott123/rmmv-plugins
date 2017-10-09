@@ -1,0 +1,37 @@
+snippets:
+  - &credits
+    background: 2
+    positionType: 1
+  - &evil1
+    faceName: Evil
+    faceId: 0
+    prepend: 「evil1」：\n
+  - &evil2
+    faceName: Evil
+    faceId: 1
+    prepend: 「evil2」：\n
+scripts:
+  - name: 制作申明
+    <<: *credits
+    lines:
+      - |
+        我是一段很长的话
+        可以有很多行
+  - name: 剧情测试1
+    <<: *evil1
+    lines:
+      - 我是一些文本
+      - 我会说很多话
+      - 我会自动选择脸图并且在前面加上名字
+  - name: 剧情测试2
+    list:
+      - <<: *evil1
+        lines:
+          - 我是 evil1
+      - <<: *evil2
+        lines:
+          - 我是 evil2
+      - <<: *evil1
+        lines:
+          - 嘿嘿嘿！
+          - 我会说很多话！
