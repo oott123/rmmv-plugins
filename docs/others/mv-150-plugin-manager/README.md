@@ -190,8 +190,6 @@ console.log(JSON.parse(value))
 
 这个指令将参数编辑器指定为一个带有真/假两个选项的选择器，其默认文本是“ON”和“OFF”。
 
-This directive will create the editor with two radio options returning a true/false value. The default labels are "ON" and "OFF".
-
 ![](type-boolean.png)
 
 ```
