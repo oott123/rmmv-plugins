@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noodp">
+    <title>{% if page.title %}{{ page.title }}{% else %}&nbsp;{% endif %}</title>
+{% seo title=false %}
+    <link href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      {{ content }}
+
+      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+        By <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>, {% github_edit_link "view source" %}. This Page has Super Cow Powers.
+      </div>
+    </div>
+    <script src="{{ "assets/javascript/anchor-js/anchor.min.js" | relative_url }}"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>
